@@ -1,0 +1,27 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+
+	<br>
+  {{"contoh"}}
+	<br>
+  {{barang.nama}} = {{barang.harga | currency:'Rp '}}
+
+	<br>
+</p>
+
+	<div *ngFor="let __buah of item; let i=index">
+		{{i+1}} {{__buah.nama}} = {{__buah.harga}}
+	</div>
+	<br>
+	<div *ngFor="let angka of angka; let i=index">
+		{{angka}}
+	</div>
+
+	<p *ngIf="show">
+		tampilkan isi
+	</p>
+
+	<p *ngIf="user.nama">
+		user nama = {{user.nama}}
+	</p>
